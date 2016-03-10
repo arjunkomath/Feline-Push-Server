@@ -30,8 +30,8 @@ app.get('/push', function (req, res) {
 				return new promise( function (resolve) {
 					var message = {
 						registration_id: d.token,
-						'data.title': 'Title',
-						'data.message': 'message'
+						'data.title': 'Discover your next favorite thing…',
+						'data.message': 'Check the latest hunts!'
 					};
 					gcm.send(message, function(err, messageId){
 						if (err) {
